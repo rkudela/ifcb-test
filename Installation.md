@@ -32,9 +32,13 @@ Clone the oii repository using this command:
 git clone https://github.com/joefutrelle/oii.git
 ```
 
-now go up one directory. Use vagrant to start the virtual machine. This will take a long time initially, as it must install and configure the dashboard and start it running.
+now go up one directory and use vagrant to start the virtual machine. This will take a long time initially, as it must install and configure the dashboard and start it running.
 
 ```
 cd ..
 vagrant up
 ```
+
+Once the vagrant operation completes, you should be able to visit the dashboard in a web browser on the Windows host using this URL:
+
+http://localhost:8888/
