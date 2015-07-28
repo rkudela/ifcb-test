@@ -16,16 +16,24 @@ Open the Git powershell. You should see a prompt and you should be in a sub-dire
 
 Clone the ifcb-dashboard repository using this command:
 
-```git clone https://github.com/joefutrelle/ifcb-dashboard.git```
+```
+git clone https://github.com/joefutrelle/ifcb-dashboard.git
+```
 
 this will create a directory called ifcb-dashboard. change to that directory using
 
+```
 cd ifcb-dashboard
+```
 
 Clone the oii repository using this command:
 
+```
 git clone https://github.com/joefutrelle/oii.git
+```
 
 now go up one directory. Use vagrant to start the virtual machine. This will take a long time initially, as it must install and configure the dashboard and start it running.
 
+```
 vagrant up
+```
