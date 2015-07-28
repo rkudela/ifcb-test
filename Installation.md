@@ -35,5 +35,6 @@ git clone https://github.com/joefutrelle/oii.git
 now go up one directory. Use vagrant to start the virtual machine. This will take a long time initially, as it must install and configure the dashboard and start it running.
 
 ```
+cd ..
 vagrant up
 ```
