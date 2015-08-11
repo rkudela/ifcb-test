@@ -61,7 +61,7 @@ sudo mkdir /mnt/ifcb
 Now you need to modify the `/etc/fstab` file to contain a description of how to map your Windows share to the mount point. Here you will need the appropriate username and password for your Windows share. In the following example the username is `ifcbuser` and the password is `planktonarecool`.
 
 ```
-sudo echo "//myserver.whatever.edu/ifcbdata /mnt/ifcb cifs username=ifcbuser,password=planktonarecool 0 0" \
+echo "//myserver.whatever.edu/ifcbdata /mnt/ifcb cifs username=ifcbuser,password=planktonarecool 0 0" \
 | sudo tee -a /etc/fstab
 ```
 
