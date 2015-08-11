@@ -46,10 +46,6 @@ Once the vagrant operation completes, you should be able to visit the dashboard 
 
 http://localhost:8888/
 
-or the hostname of your Windows machine on your network
-
-http://{your hostname}:8888/
-
 You should see a "blank" dashboard.
 
 ## Add your data
@@ -88,3 +84,25 @@ ls /mnt/ifcb
 ```
 
 ## TBD: accession
+
+## Allowing non-local access to your dashboard
+
+If you would like to be able to connect to your dashboard from a different computer than the one you are running it on, you will need to make a small configuration change to `dashboard.wsgi` in the `ifcb-dashboard` directory.
+
+By default, there is a line in `dashboard.wsgi` that reads:
+
+```
+  DASHBOARD_BASE_URL='http://localhost:8888/',
+```
+
+Edit this, replacing `localhost` with the fully qualified domain name of your computer. For instance if your computer is called `mycomputer.something.edu`, change the line to
+
+```
+  DASHBOARD_BASE_URL='http://mycomputer.something.edu:8888/',
+```
+
+DO NOT forget the trailing comma. Now restart the dashboard. You will need to do this by being logged into the virtual machine (using `vagrant ssh`) and running the command
+
+```
+sudo service apache2 restart
+```
