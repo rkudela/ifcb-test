@@ -6,8 +6,6 @@ Install Github for Windows:
 
 https://windows.github.com/
 
-[TODO: instructions for how to get GitHub for Windows to install the command-line tools]
-
 Install Vagrant for Windows. This will require a reboot.
 
 https://www.vagrantup.com/downloads.html
@@ -63,9 +61,8 @@ sudo mkdir /mnt/ifcb
 Now you need to modify the `/etc/fstab` file to contain a description of how to map your Windows share to the mount point. Here you will need the appropriate username and password for your Windows share. In the following example the username is `ifcbuser` and the password is `planktonarecool`.
 
 ```
-sudo cat > /etc/fstab <<EOF
-//myserver.whatever.edu/ifcbdata /mnt/ifcb cifs username=ifcbuser,password=planktonarecool 0 0
-EOF
+sudo echo "//myserver.whatever.edu/ifcbdata /mnt/ifcb cifs username=ifcbuser,password=planktonarecool 0 0" \
+| sudo tee -a /etc/fstab
 ```
 
 Now mount the share:
