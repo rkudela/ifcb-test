@@ -1,3 +1,5 @@
+## Install prerequisites
+
 Install VirtualBox for Windows Hosts:
 
 https://www.virtualbox.org/wiki/Downloads
@@ -11,6 +13,8 @@ Install Vagrant for Windows. This will require a reboot.
 https://www.vagrantup.com/downloads.html
 
 Open the Git powershell. You should see a prompt and you should be in a sub-directory of your Document directory called "GitHub".
+
+## Get the code
 
 Clone the ifcb-dashboard repository using this command:
 
@@ -30,6 +34,8 @@ Clone the oii repository using this command:
 git clone https://github.com/joefutrelle/oii.git
 ```
 
+## Provision and run the virtual machine
+
 Now use vagrant to start the virtual machine. This will take a long time initially, as it must install and configure the dashboard and start it running.
 
 ```
@@ -44,7 +50,11 @@ or the hostname of your Windows machine on your network
 
 http://{your hostname}:8888/
 
-You should see a "blank" dashboard. Now you need to give the virtual machine access to your data. The following assumes that your data is on a share called `\\myserver.whatever.edu\ifcbdata`.
+You should see a "blank" dashboard.
+
+## Add your data
+
+Now you need to give the virtual machine access to your data. The following assumes that your data is on a share called `\\myserver.whatever.edu\ifcbdata`.
 
 At the git shell prompt, enter this command to log in to your virtual machine.
 
@@ -76,3 +86,5 @@ You should be able to see the contents of the share using this command:
 ```
 ls /mnt/ifcb
 ```
+
+## TBD: accession
