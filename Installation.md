@@ -40,7 +40,7 @@ git clone https://github.com/joefutrelle/oii.git
 
 ## Provision and run the virtual machine
 
-Now use vagrant to start the virtual machine. This will take a long time initially, as it must install and configure the dashboard and start it running.
+Now use vagrant to start the virtual machine. Thi will take a long time initially, as it must download, install, configure, and start the dashboard.
 
 ```
 vagrant up
