@@ -1,8 +1,12 @@
+This guide covers installation of the IFCB dashboard on Windows.
+
 ## Install prerequisites
 
 Install VirtualBox for Windows Hosts:
 
 https://www.virtualbox.org/wiki/Downloads
+
+The VirtualBox installation will temporarily interrupt network connections to and from your Windows machine.
 
 Install Github for Windows:
 
