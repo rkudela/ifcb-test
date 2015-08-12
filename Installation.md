@@ -110,3 +110,5 @@ DO NOT forget the trailing comma. Now restart the dashboard. You will need to do
 ```
 sudo service apache2 restart
 ```
+
+If you are running Windows Firewall, you will need to make sure that it is not blocking TCP traffic on port 8888.
