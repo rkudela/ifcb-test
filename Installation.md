@@ -22,13 +22,13 @@ Open the Git powershell. You should see a prompt and you should be in a sub-dire
 
 ## Get the code
 
-Clone the ifcb-dashboard repository using this command:
+In the GitHub powershell, clone the ifcb-dashboard repository using this command:
 
 ```
 git clone https://github.com/joefutrelle/ifcb-dashboard.git
 ```
 
-this will create a directory called ifcb-dashboard. change to that directory using
+this will create a directory called `ifcb-dashboard`. change to that directory using
 
 ```
 cd ifcb-dashboard
