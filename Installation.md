@@ -50,7 +50,9 @@ vagrant up
 
 Once the vagrant operation completes, you should be able to visit the dashboard in a web browser on the Windows host using this URL:
 
+```
 http://localhost:8888/
+```
 
 You should see a "blank" dashboard.
 
