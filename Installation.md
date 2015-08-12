@@ -1,4 +1,6 @@
-This guide covers installation of the IFCB dashboard on Windows.
+## Overview
+
+This guide covers installation of the IFCB dashboard on Windows 7. To do this you must have access to the internet from your Windows machine, and your Windows machine must have hardware virtualization enabled in the BIOS (most Windows machines have this enabled by default). These instructions have not been tested under Windows 8 or Windows 10, but they will probably work in Windows 8.
 
 ## Install prerequisites
 
@@ -40,7 +42,7 @@ git clone https://github.com/joefutrelle/oii.git
 
 ## Provision and run the virtual machine
 
-Now use vagrant to start the virtual machine. Thi will take a long time initially, as it must download, install, configure, and start the dashboard.
+Now use vagrant to start the virtual machine. This will take a long time initially, as it must download, install, configure, and start the dashboard.
 
 ```
 vagrant up
