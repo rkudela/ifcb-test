@@ -22,7 +22,7 @@ Open the Git powershell. You should see a prompt and you should be in a sub-dire
 
 ## Get the code
 
-In the GitHub powershell, clone the ifcb-dashboard repository using this command:
+In the Git Shell, clone the ifcb-dashboard repository using this command:
 
 ```
 git clone https://github.com/joefutrelle/ifcb-dashboard.git
@@ -60,7 +60,7 @@ You will see a "blank" dashboard.
 
 Now you need to give the virtual machine access to your data. The following assumes that your data is on a share called `\\myserver.whatever.edu\ifcbdata`.
 
-At the git shell prompt, enter this command to log in to your virtual machine.
+At the Git Shell prompt, enter this command to log in to your virtual machine.
 
 ```
 vagrant ssh
