@@ -93,7 +93,11 @@ ls /mnt/ifcb
 
 ## Accession
 
-TBD
+Log in to the dashboard using the "Admin" link at the bottom of the dashboard web interface. The default administrative username is "admin@whoi.edu" and the default password is "12345678". Once logged in, you can, and should change this password on the "Users" tab. You will still have to use the "admin@whoi.edu" login name (changing it is currently unimplemented).
+
+On the administration page, navigate to "Time Series" and click on "Add New Time Series". Give your time series a short name (no spaces) and a brief description, and set "enabled" to "true". Next, click "add path" and enter the path `/mnt/ifcb` (or appropriate subdirectory if your data is in a subdirectory). Make sure that "raw" is selected under the path. The correct directory to add is either one that contains data files, or one that contains a subdirectory for each year that has data.
+
+Click the blue "Save" button. Then click "Accede". Navigate back to the time series by clicking on time series link. Now if you reload repeatedly you should see data appear on the timeline. If it didn't, you may have entered the wrong directory name, and you can navigate back to Admin -> Time Series and click "edit" to change the path and "accede" to restart the data accession process.
 
 ## Allowing non-local access to your dashboard
 
