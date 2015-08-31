@@ -48,14 +48,6 @@ Now use vagrant to start the virtual machine. This will take a long time initial
 vagrant up
 ```
 
-Once the vagrant operation completes, you should be able to visit the dashboard in a web browser on the Windows host using this URL:
-
-```
-http://localhost:8888/
-```
-
-You should see a "blank" dashboard.
-
 ## Add your data
 
 Now you need to give the virtual machine access to your data. The following assumes that your data is on a share called `\\myserver.whatever.edu\ifcbdata`.
