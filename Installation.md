@@ -48,6 +48,14 @@ Now use vagrant to start the virtual machine. This will take a long time initial
 vagrant up
 ```
 
+You should be able to visit your dashboard now from the computer you are running it on at the following URL:
+
+```
+http://localhost:8888/
+```
+
+You will see a "blank" dashboard.
+
 ## Add your data
 
 Now you need to give the virtual machine access to your data. The following assumes that your data is on a share called `\\myserver.whatever.edu\ifcbdata`.
@@ -83,25 +91,27 @@ You should be able to see the contents of the share using this command:
 ls /mnt/ifcb
 ```
 
-## TBD: accession
+## Accession
+
+TBD
 
 ## Allowing non-local access to your dashboard
 
-If you would like to be able to connect to your dashboard from a different computer than the one you are running it on, you will need to make a small configuration change to `dashboard.wsgi` in the `ifcb-dashboard` directory.
+If you would like to be able to connect to your dashboard from a different computer than the one you are running it on, you will need to make a small configuration change to `dashboard_conf.py` in the `ifcb-dashboard` directory.
 
-By default, there is a line in `dashboard.wsgi` that reads:
+By default, there is a line in `dashboard_conf.py` that reads:
 
 ```
-  DASHBOARD_BASE_URL='http://localhost:8888/',
+DASHBOARD_BASE_URL='http://localhost:8888/'
 ```
 
 Edit this, replacing `localhost` with the fully qualified domain name of your computer. For instance if your computer is called `mycomputer.something.edu`, change the line to
 
 ```
-  DASHBOARD_BASE_URL='http://mycomputer.something.edu:8888/',
+DASHBOARD_BASE_URL='http://mycomputer.something.edu:8888/'
 ```
 
-DO NOT forget the trailing comma. Now restart the dashboard. You will need to do this by being logged into the virtual machine (using `vagrant ssh`) and running the command
+Now restart the dashboard. You will need to do this by being logged into the virtual machine (using `vagrant ssh`) and running the command
 
 ```
 sudo service apache2 restart
