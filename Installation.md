@@ -18,7 +18,7 @@ Install Vagrant for Windows. This will require a reboot.
 
 https://www.vagrantup.com/downloads.html
 
-Open the Git powershell. You should see a prompt and you should be in a sub-directory of your Document directory called "GitHub".
+Open the Git Shell. You should see a prompt and you should be in a sub-directory of your Documents directory called "GitHub".
 
 ## Get the code
 
