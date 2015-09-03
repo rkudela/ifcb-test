@@ -57,7 +57,7 @@ http://localhost:8888/
 
 You will see a "blank" dashboard.
 
-## Add your data
+## Connect your data directory
 
 Now you need to give the virtual machine access to your data. The following assumes that your data is on a share called `\\myserver.whatever.edu\ifcbdata`.
 
@@ -91,6 +91,8 @@ You should be able to see the contents of the share using this command:
 ```
 ls /mnt/ifcb
 ```
+
+Your data will not yet appear in the dashboard; first you may want to adjust your URL settings to allow non-local access to the dashboard.
 
 ## Allowing non-local access to your dashboard
 
