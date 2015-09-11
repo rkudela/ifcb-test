@@ -94,6 +94,8 @@ ls /mnt/ifcb
 
 Your data will not yet appear in the dashboard; first you may want to adjust your URL settings to allow non-local access to the dashboard.
 
+> Note: it's very important for the proper functioning of the dashboard for the share to remain accessible at all times. If your share is served from a machine that is rebooted frequently or is not always accessible over the network, then your dashboard may become unresponsive and you will probably need to manually unmount and remount the share on the virtual machine, or reboot it.
+
 ## Allowing non-local access to your dashboard
 
 If you would like to be able to connect to your dashboard from a different computer than the one you are running it on, you will need to make a small configuration change to `dashboard_conf.py` in the `ifcb-dashboard` directory.
