@@ -120,13 +120,29 @@ sudo service apache2 restart
 
 If you are running Windows Firewall, you will need to make sure that it is not blocking TCP traffic on port 8888.
 
-## Accession
+## Administration and security
 
-Log in to the dashboard using the "Admin" link at the bottom of the dashboard web interface. The default administrative username is "admin@whoi.edu" and the default password is "12345678". Once logged in, you can, and should change this password on the "Users" tab. You will still have to use the "admin@whoi.edu" login name (changing it is currently unimplemented).
+Server administration actions, such as loading data into the dashboard (aka "accession") require logging into the dashboard as a privileged user. The default administrative username is "admin@whoi.edu" and the default password is "12345678". Click on the "Admin" link at the bottom of the web interface, log in, navigate to the "Users" tab, and you can (and should!) change the password for this user from the default.
+
+On the users tab you can also create and modify users, and grant/revoke administrative privileges to a user. You should always have at least one user with administrative privileges that you can log in as. If you accidentally revoke administrative privileges from all users, or delete all users, you can use the password reset tool provided. On the virtual machine, run the following command:
+
+```
+cd /vagrant; bash password_reset.sh
+```
+
+which will create the default administrative user and set the password to a random string that will be shown on the command line.
+
+## Accession
 
 On the administration page, navigate to "Time Series" and click on "Add New Time Series". Give your time series a short name (no spaces) and a brief description, and set "enabled" to "true". Next, click "add path" and enter the path `/mnt/ifcb` (or appropriate subdirectory if your data is in a subdirectory). Make sure that "raw" is selected under the path. The correct directory to add is either one that contains data files, or one that contains a subdirectory for each year that has data.
 
-Click the blue "Save" button (not the "Add Path" button). Then click "Accede". Navigate back to the time series by clicking on time series link. Now if you reload repeatedly you should see data appear on the timeline. If no data appears within a short period of time, you may have entered the wrong directory name, and you can navigate back to Admin -> Time Series and click "edit" to change the path and "accede" to restart the data accession process.
+Click the blue "Save" button (not the "Add Path" button). Then click the "Check paths" button. You should receive a message indicating that data has been found at the path you specified. If you see a message that data is not found, you have either set the path wrong or there is a problem accessing your data share.
+
+Once "Check paths" succeeds, click "Accede". Navigate back to the time series by clicking on time series link. Now if you reload repeatedly you should see data appear on the timeline.
+
+> Note: if you put new data in your data directories, the dashboard will not automatically detect and load the data. You will need to press the "Accede" button again to load the new data.
+
+### Debugging accession
 
 If you are having trouble with accession, you can test to see if your path is correct by attempting to view a single bin at its direct URL. Suppose your time series label is "mydata" and you have a bin with filenames such as "D20130911T172652_IFCB014.adc". You can verify that the dashboard can find your file by going to
 
