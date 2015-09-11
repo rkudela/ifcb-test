@@ -151,3 +151,14 @@ http://localhost:8888/mydata/D20130911T172652_IFCB014.html
 ```
 
 If you see a display of data, then the path you added for your time series is correct. If you don't, your path is wrong. Also make sure the time series label in your URL matches the one you set in the admin interface.
+
+If the direct link strategy works but accession is not working, the simplest course of action is to reboot your virtual machine. In the Git Shell, in your `ifcb-dashboard`, run the following commands:
+
+```
+vagrant halt
+vagrant up
+```
+
+Once your virtual machine is back up, navigate to the dashboard's Admin page and re-attempt accession.
+
+Another approach is to halt the virtual machine, reboot the Windows machine that the virtual machine is running on, and restart the virtual machine.
