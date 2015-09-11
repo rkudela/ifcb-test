@@ -120,6 +120,8 @@ Now restart the dashboard. You will need to do this by being logged into the vir
 sudo service apache2 restart
 ```
 
+> Note: you will see a warning that begins "Could not reliably determine the server's fully qualified domain name". You can ignore this warning.
+
 If you are running Windows Firewall, you will need to make sure that it is not blocking TCP traffic on port 8888.
 
 ## Administration and security
