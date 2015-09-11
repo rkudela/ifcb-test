@@ -112,6 +112,8 @@ Edit this, replacing `localhost` with the fully qualified domain name of your co
 DASHBOARD_BASE_URL='http://mycomputer.something.edu:8888/'
 ```
 
+> Note: don't change `WORKFLOW_URL`.
+
 Now restart the dashboard. You will need to do this by being logged into the virtual machine (using `vagrant ssh`) and running the command
 
 ```
