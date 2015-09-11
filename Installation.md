@@ -142,7 +142,7 @@ which will create the default administrative user and set the password to a rand
 
 ## Accession
 
-On the administration page, navigate to "Time Series" and click on "Add New Time Series". Give your time series a short name (no spaces) and a brief description, and set "enabled" to "true". Next, click "add path" and enter the path `/mnt/ifcb` (or appropriate subdirectory if your data is in a subdirectory). Make sure that "raw" is selected under the path. The correct directory to add is either one that contains data files, or one that contains a subdirectory for each year that has data.
+On the administration page, navigate to "Time Series" and click on "Add Another Time Series". Give your time series a short name (no spaces) and a brief description, and set "enabled" to "true". Next, fill in the empty path entry with the path `/mnt/ifcb` (or appropriate subdirectory if your data is in a subdirectory). Make sure that default setting of "raw" is selected under the path. The correct directory to add is either one that contains data files, or one that contains a subdirectory for each year that has data.
 
 Click the blue "Save" button (not the "Add Path" button). Then click the "Check paths" button. You should receive a message indicating that data has been found at the path you specified. If you see a message that data is not found, you have either set the path wrong or there is a problem accessing your data share.
 
