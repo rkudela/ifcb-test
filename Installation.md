@@ -57,6 +57,8 @@ http://localhost:8888/
 
 You will see a "blank" dashboard.
 
+![blank_dashboard_small](https://cloud.githubusercontent.com/assets/2365298/9886208/0f9bb708-5bb7-11e5-8f68-52f543058aa2.png)
+
 ## Connect your data directory
 
 Now you need to give the virtual machine access to your data. The following assumes that your data is on a share called `\\myserver.whatever.edu\ifcbdata`.
