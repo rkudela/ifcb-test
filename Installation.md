@@ -130,6 +130,8 @@ If you are running Windows Firewall, you will need to make sure that it is not b
 
 Server administration actions, such as loading data into the dashboard (aka "accession") require logging into the dashboard as a privileged user. The default administrative username is "admin@whoi.edu" and the default password is "12345678". Click on the "Admin" link at the bottom of the web interface, log in, navigate to the "Users" tab, and you can (and should!) change the password for this user from the default.
 
+![set_admin_password_small](https://cloud.githubusercontent.com/assets/2365298/9886299/8ed2d132-5bb7-11e5-83f9-f4e0a35340d8.png)
+
 On the users tab you can also create and modify users, and grant/revoke administrative privileges to a user. You should always have at least one user with administrative privileges that you can log in as.
 
 ### Recovering from a forgotten password or lost administrative access
