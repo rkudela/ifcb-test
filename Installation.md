@@ -150,6 +150,8 @@ On the administration page, navigate to "Time Series" and click on "Add Another 
 
 Click the blue "Save" button (not the "Add Another Path" button). Then click the "Check paths" button. You should receive a message indicating that data has been found at the path you specified. If you see a message that data is not found, you have either set the path wrong or there is a problem accessing your data share.
 
+![check_paths_small](https://cloud.githubusercontent.com/assets/2365298/9886459/660af3a0-5bb8-11e5-8546-d74396c7711f.png)
+
 Once "Check paths" succeeds, click "Accede". Navigate back to the time series by clicking on time series link. Now if you reload repeatedly you should see data appear on the timeline.
 
 > Note: if you put new data in your data directories, the dashboard will not automatically detect and load the data. You will need to press the "Accede" button again to load the new data.
