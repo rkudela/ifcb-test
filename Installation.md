@@ -138,7 +138,7 @@ If you forget your password, or you accidentally revoke administrative privilege
 cd /vagrant; bash password_reset.sh
 ```
 
-which will create the default administrative user and set the password to a random string that will be shown on the command line.
+which will create the default administrative user and set the password to a random string that will be shown on the command line. Log in to the dashboard as that user ("admin@whoi.edu"), navigate to "Admin", and change the password, then set up any other users that you would like.
 
 ## Accession
 
