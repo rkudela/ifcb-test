@@ -154,7 +154,8 @@ Once "Check paths" succeeds, click "Accede". Navigate back to the time series by
 
 If you are having trouble with accession, check that all the following are set up correctly:
 
-* Your time series configuration has a "raw" path that is set to your mount point (e.g., /mnt/ifcb followed by the appropriate subdirectory on your share)
+* Your data directory share is mounted on your virtual machine (e.g., at /mnt/ifcb) and on the virtual machine, you can list the files on your mount point (e.g., with "ls /mnt/ifcb") and see something (rather than nothing)
+* Your time series configuration on the dashboard Admin page has a "raw" path that is set to your mount point (e.g., /mnt/ifcb followed by the appropriate subdirectory on your share)
 * Clicking "Check paths" on your time series does not generate a warning about not being able to find data
 * You have clicked "Accede"
 * You have waited at least 30 seconds and have reloaded the dashboard in your browser
