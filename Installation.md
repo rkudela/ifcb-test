@@ -152,15 +152,14 @@ Once "Check paths" succeeds, click "Accede". Navigate back to the time series by
 
 ### Debugging accession
 
-If you are having trouble with accession, you can test to see if your path is correct by attempting to view a single bin at its direct URL. Suppose your time series label is "mydata" and you have a bin with filenames such as "D20130911T172652_IFCB014.adc". You can verify that the dashboard can find your file by going to
+If you are having trouble with accession, check that all the following are set up correctly:
 
-```
-http://localhost:8888/mydata/D20130911T172652_IFCB014.html
-```
+* Your time series configuration has a "raw" path that is set to your mount point (e.g., /mnt/ifcb followed by the appropriate subdirectory on your share)
+* Clicking "Check paths" on your time series does not generate a warning about not being able to find data
+* You have clicked "Accede"
+* You have waited at least 30 seconds and have reloaded the dashboard in your browser
 
-If you see a display of data, then the path you added for your time series is correct. If you don't, your path is wrong. Also make sure the time series label in your URL matches the one you set in the admin interface.
-
-If the direct link strategy works but accession is not working, the simplest course of action is to reboot your virtual machine. In the Git Shell, in your `ifcb-dashboard`, run the following commands:
+If all of these are taken care of, the next simplest course of action is to reboot your virtual machine. In the Git Shell, in your `ifcb-dashboard` directory, run the following commands:
 
 ```
 vagrant halt
