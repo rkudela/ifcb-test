@@ -5,7 +5,11 @@ If you followed the instructions to mount data directories or the instrument dat
 1. The share is not up
 1. Your `/etc/fstab` configuration is incorrect
 
-To test if the share is up, try connecting to it from another Windows machine. If you can do that, the share is up and should be able to be mounted on the virtual machine. If not, you will need to work on bringing the share up and making sure it is accessible to your Windows host.
+### Make sure your share is up
+
+To test if the share is up, try connecting to it from another Windows machine using Windows Explorer. If you can do that, the share is up and should be able to be mounted on the virtual machine. If not, you will need to work on bringing the share up and making sure it is accessible to your Windows host.
+
+### Make sure you can connect to your share
 
 Assuming the share is up, the next step you can try is to try to temporarily connect to your server (either the host with your data directories, or your IFCB) and list the shares.
 
@@ -17,7 +21,35 @@ smbclient -L myserver.wherever.edu -Uifcbuser
 
 You will be prompted for your password and you should see a list of shares.
 
-If that works, then there are no issues connecting, and the problem is likely with your `/etc/fstab` entry. Review your `/etc/fstab` file by typing the following command:
+Now try to mount the share temporarily. First, create a temporary mount point:
+
+```
+mkdir /tmp/sharetest
+```
+
+Now, mount it (fill in your own server, share name, username, password, the ones shown here are examples):
+
+```
+sudo mount -t cifs -o username=ifcbuser,password=phyto //myserver.wherever.edu/myshare /tmp/sharetest
+```
+
+Check the contents with:
+
+```
+ls /tmp/sharetest
+```
+
+If you see data, there is no issue connecting. Now unmount and delete the temporary mount point:
+
+```
+sudo umount /tmp/sharetest && rmdir /tmp/sharetest
+```
+
+Now that you are sure connecting works, the problem is likely with your `/etc/fstab` entry.
+
+### Correcting your /etc/fstab entry
+
+Review your `/etc/fstab` file by typing the following command:
 
 ```
 cat /etc/fstab
@@ -57,4 +89,10 @@ sudo umount /mnt/ifcb
 sudo mount /mnt/ifcb
 ```
 
-Don't worry if `umount` says that the share isn't mounted; unmounting it is just a precaution.
+Don't worry if `umount` says that the share isn't mounted; unmounting it is just a precaution. Now list it, for example:
+
+```
+ls /mnt/ifcb
+```
+
+If you see data, everything is fine and you have fixed the problem. Otherwise, carefully review `/etc/fstab` to make sure the entry for your share is exactly correct.
