@@ -39,3 +39,11 @@ If there are errors in `/etc/fstab`, you will need to edit that file on the virt
 > Note: it is critically important to only edit the lines that you have added to `/etc/fstab`. If you edit the other line(s), you could make the virutal machine unable to boot.
 
 Refer to [[Installation]] to see what the correct `/etc/fstab` entry should look like for your share.
+
+To edit your `/etc/fstab` with `nano`, run the following command:
+
+```
+sudo nano /etc/fstab
+```
+
+To learn how to use `nano`, read [this user's guide](http://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/)
