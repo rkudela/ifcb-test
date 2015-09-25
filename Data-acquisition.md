@@ -14,5 +14,21 @@ For example if you want to mount your instrument at `/mnt/live`, run this comman
 sudo mkdir /mnt/live
 ```
 
-Continuing this example, if your IFCB has the IP address 192.168.1.5 and the username and password to connect to it is `ifcbuser`/`phyto`, enter the following commands:
+Continuing this example, if your IFCB has the IP address 192.168.1.5 and the username and password to connect to it is `ifcbuser`/`phyto`, enter the following command:
 
+```
+echo "//192.168.1.5/data /mnt/live cifs username=ifcbuser,password=phyto 0 0" \
+| sudo tee -a /etc/fstab
+```
+
+Now mount the data directory:
+
+```
+sudo mount /mnt/live
+```
+
+And check to make sure that it worked by running the command below, which should show you a list of data files (if your IFCB has collected any data):
+
+```
+ls /mnt/live
+```
