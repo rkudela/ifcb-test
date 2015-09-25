@@ -37,4 +37,17 @@ If this does not work, see [[Troubleshooting]] to debug your share and mount poi
 
 ### Configure the dashboard for your instrument
 
-In the dashboard, open the administration interface (as described in [[Installation]]), navigate to "Instruments", and create an instrument. Give it a short name with no spaces or unusual characters, and enter the pathname of the IFCB's data directory mount point that you set up above.
+In the dashboard, open the administration interface (as described in [[Installation]]), navigate to "Instruments", and create an instrument. Give it a short name with no spaces or unusual characters, and enter the pathname of the IFCB's data directory mount point that you set up above. Finally, select the time series that you want to add your IFCB's data to, and click "Save".
+
+![add_instrument](https://cloud.githubusercontent.com/assets/2365298/10107610/3c9a8db2-638a-11e5-9397-5b876472c98f.png)
+
+Now, test the acquisition process using the command line on your virtual machine. For example, if you called your instrument "myifcb", run the following command:
+
+```
+curl http://localhost:9270/workflow/api/v1/wakeup/ifcb:acq:myifcb > /dev/null
+```
+
+If you return to your dashboard, you should see data from the instrument in your time series. If you don't see it immediately, wait a few seconds and reload the dashboard in your browser. If you do this repeatedly and data does not show up, there may be a variety of problems. For example, your data share (not the instrument's data directory, but the one associated with your time series) may not allow you to write because of permissions.
+
+If this works, you are ready to set up a schedule for automatic acquisition. Decide on how often to check for new data. It is generally not necessary to check more often than once every 20 minutes. To set up this schedule, run the following command on your virtual machine:
+
