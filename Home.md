@@ -1,2 +1,2 @@
-[[Installation]]
-[[Data acquisition]]
+* [[Installation]]
+* [[Data acquisition]]
