@@ -1,6 +1,6 @@
 The IFCB dashboard can copy data from your instrument to your specified data directories (see [[Installation]] for details about how to set up time series and data directories). You can configure the dashboard to periodically check for new data on your IFCB and copy it to the appropriate location for your time series.
 
-> Note: the IFCB dashboard will never delete data from your IFCB. To free up space on your IFCB's hard drive, you will need to manually delete older data.
+> Note: the IFCB dashboard will never delete data from your IFCB. To free up space on your IFCB's hard drive, you will need log into your IFCB and manually delete data that you have already copied off of it.
 
 ### Set up access to your IFCB's data directory
 
@@ -49,5 +49,8 @@ curl http://localhost:9270/workflow/api/v1/wakeup/ifcb:acq:myifcb > /dev/null
 
 If you return to your dashboard, you should see data from the instrument in your time series. If you don't see it immediately, wait a few seconds and reload the dashboard in your browser. If you do this repeatedly and data does not show up, there may be a variety of problems. For example, your data share (not the instrument's data directory, but the one associated with your time series) may not allow you to write because of permissions.
 
-If this works, you are ready to set up a schedule for automatic acquisition. Decide on how often to check for new data. It is generally not necessary to check more often than once every 20 minutes. To set up this schedule, run the following command on your virtual machine:
+If this works, you are ready to set up a schedule for automatic acquisition. Decide on how often to check for new data. It is generally not necessary to check more often than once every 20 minutes. To set up this schedule, run the following command on your virtual machine (remember, this is an example, use whatever you called your instrument in place of 'myifcb'):
 
+```
+{ crontab -l; echo '*/20 * * * * /usr/bin/curl http://localhost:9270/workflow/api/v1/wakeup/ifcb:acq:myifcb > /dev/null'; } | crontab -
+```
