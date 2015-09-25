@@ -1,4 +1,4 @@
-# Cannot mount data directories or instrument data share
+## Cannot mount data directories or instrument data share
 
 If you followed the instructions to mount data directories or the instrument data share on your virtual machine, but are still not seeing the files, there could be several reasons:
 
