@@ -2,7 +2,7 @@ The IFCB dashboard can copy data from your instrument to your specified data dir
 
 > Note: the IFCB dashboard will never delete data from your IFCB. To free up space on your IFCB's hard drive, you will need to manually delete older data.
 
-### Set up access to your IFCB data directory
+### Set up access to your IFCB's data directory
 
 To accomplish acquisition, your IFCB's data share first needs to be mounted on your dashboard server (under Windows, this is the virtual machine you set up as described in [[Installation]]).
 
@@ -32,3 +32,9 @@ And check to make sure that it worked by running the command below, which should
 ```
 ls /mnt/live
 ```
+
+If this does not work, see [[Troubleshooting]] to debug your share and mount point.
+
+### Configure the dashboard for your instrument
+
+In the dashboard, open the administration interface (as described in [[Installation]]), navigate to "Instruments", and create an instrument. Give it a short name with no spaces or unusual characters, and enter the pathname of the IFCB's data directory mount point that you set up above.
