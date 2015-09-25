@@ -2,7 +2,7 @@ The IFCB dashboard can copy data from your instrument to your specified data dir
 
 > Note: the IFCB dashboard will never delete data from your IFCB. To free up space on your IFCB's hard drive, you will need to manually delete older data.
 
-# Set up access to your IFCB data directory
+### Set up access to your IFCB data directory
 
 To accomplish acquisition, your IFCB's data share first needs to be mounted on your dashboard server (under Windows, this is the virtual machine you set up as described in [[Installation]]).
 
