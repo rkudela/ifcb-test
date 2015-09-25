@@ -37,7 +37,7 @@ If this does not work, see [[Troubleshooting]] to debug your share and mount poi
 
 ### Configure the dashboard for your instrument
 
-In the dashboard, open the administration interface (as described in [[Installation]]), navigate to "Instruments", and create an instrument. Give it a short name with no spaces or unusual characters, and enter the pathname of the IFCB's data directory mount point that you set up above. Finally, select the time series that you want to add your IFCB's data to, and click "Save".
+In the dashboard, open the administration interface (as described in [[Installation]]), navigate to "Instruments", and click on "Add New Instrument". Give it a short name with no spaces or unusual characters, and enter the pathname of the IFCB's data directory mount point that you set up above. Finally, select the time series that you want to add your IFCB's data to, and click "Save".
 
 ![add_instrument](https://cloud.githubusercontent.com/assets/2365298/10107610/3c9a8db2-638a-11e5-9397-5b876472c98f.png)
 
