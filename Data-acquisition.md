@@ -56,3 +56,5 @@ If this works, you are ready to set up a schedule for automatic acquisition. Dec
 ```
 
 To verify this is working, make sure your IFCB is creating new files, wait at least 20 minutes, reload your dashboard, and confirm that newly-collected data is showing up.
+
+Your dashboard will now acquire data from your instrument whenever the virtual machine and dashboard are running, and there is new data to acquire. You will not have to manually copy data from your instrument when the dashboard is acquiring it.
