@@ -15,7 +15,9 @@ For example, if your server is named `myserver.wherever.edu` and the username to
 smbclient -L myserver.wherever.edu -Uifcbuser
 ```
 
-You will be prompted for your password and you should see a list of shares. If that works, then there are no issues connecting, and the problem is likely with your `/etc/fstab` entry. Review your `/etc/fstab` file by typing the following command:
+You will be prompted for your password and you should see a list of shares.
+
+If that works, then there are no issues connecting, and the problem is likely with your `/etc/fstab` entry. Review your `/etc/fstab` file by typing the following command:
 
 ```
 cat /etc/fstab
@@ -46,4 +48,13 @@ To edit your `/etc/fstab` with `nano`, run the following command:
 sudo nano /etc/fstab
 ```
 
-To learn how to use `nano`, read [this user's guide](http://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/)
+To learn how to use `nano`, read [this user's guide](http://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/).
+
+Once `/etc/fstab` looks correct, unmount and remount your share like this (in this example, the mount point is `/mnt/ifcb` but you should use whatever you have in your `/etc/fstab` line):
+
+```
+sudo umount /mnt/ifcb
+sudo mount /mnt/ifcb
+```
+
+Don't worry if `umount` says that the share isn't mounted; unmounting it is just a precaution.
