@@ -55,6 +55,8 @@ If this works, you are ready to set up a schedule for automatic acquisition. Dec
 { crontab -l; echo '*/20 * * * * /usr/bin/curl http://localhost:9270/workflow/api/v1/wakeup/ifcb:acq:myifcb > /dev/null'; } | crontab -
 ```
 
+> If you want to check more often, substitute a smaller number of minutes in place of '20', for example '*/8' to check every 8 minutes.
+
 To verify this is working, make sure your IFCB is creating new files, wait at least 20 minutes, reload your dashboard, and confirm that newly-collected data is showing up.
 
 Your dashboard will now acquire data from your instrument whenever the virtual machine and dashboard are running, and there is new data to acquire. You will not have to manually copy data from your instrument when the dashboard is acquiring it.
