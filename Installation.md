@@ -2,6 +2,8 @@
 
 This guide covers installation of the IFCB dashboard on Windows 7. To do this you must have access to the internet from your Windows machine, and your Windows machine must have hardware virtualization enabled in the BIOS (most Windows machines have this enabled by default). These instructions have not been tested under Windows 8 or Windows 10, but they will probably work in Windows 8.
 
+> Note: the configurations provided are for 64-bit Windows. If you are running 32-bit Windows you will need to use a slightly different configuration, which will be provided and documented once it is tested. Until then, try replacing `ubuntu/trusty64` with `ubuntu/trusty32' in `Vagrantfile`.
+
 ## Install prerequisites
 
 Install VirtualBox for Windows Hosts:
