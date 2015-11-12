@@ -21,7 +21,7 @@ Install VirtualBox for Windows Hosts:
 
 https://www.virtualbox.org/wiki/Downloads
 
-The VirtualBox installation will temporarily interrupt network connections to and from your Windows machine.
+The VirtualBox installation will temporarily interrupt network connections to and from your Windows machine. You may be prompted to accept the installation of network drivers; these are necessary for Windows to communicate with virtual machines, so accept them.
 
 Install Github for Windows:
 
