@@ -13,7 +13,7 @@ This guide covers installation of the IFCB dashboard on Windows 7. These instruc
 
 > Note: the configurations provided are for 64-bit Windows. If you are running 32-bit Windows you will need to use a slightly different configuration, which will be provided and documented once it is tested. Until then, try replacing `ubuntu/trusty64` with `ubuntu/trusty32` in `Vagrantfile`.
 
-> Note: the default RAM usage of the dashboard is 2GB. It will likely work fine with less RAM (which is configured in `Vagrantfile` but that has not been extensively tested.
+> Note: the default RAM usage of the dashboard is 2GB. It will likely work fine with less RAM (which is configured in `Vagrantfile`), but that has not been extensively tested.
 
 ## Install required software packages
 
