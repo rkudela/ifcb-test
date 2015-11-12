@@ -62,7 +62,7 @@ vagrant up
 ```
 > During this process you may receive a pop-up asking if you want to grant access to networks from "VBoxHeadless". You should answer in the affirmative, to allow your computer to connect to the dashboard virtual machine.
 
-> If this process times out while attempting to connect with ssh, you may be attempting to boot a 64-bit version of Ubuntu on a 32-bit machine (see above).
+> If this process times out while attempting to connect with ssh, you may be attempting to boot a 64-bit version of Ubuntu on a 32-bit machine (see above), or you may not have enabled virtualization in your BIOS.
 
 Once the virtual machine boots, you should be able to visit your dashboard now from the computer you are running it on at the following URL:
 
