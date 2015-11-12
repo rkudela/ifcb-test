@@ -1,10 +1,21 @@
 ## Overview
 
-This guide covers installation of the IFCB dashboard on Windows 7. To do this you must have access to the internet from your Windows machine, and your Windows machine must have hardware virtualization enabled in the BIOS (most Windows machines have this enabled by default). These instructions have not been tested under Windows 8 or Windows 10, but they will probably work in Windows 8.
+This guide covers installation of the IFCB dashboard on Windows 7. These instructions have not been tested under Windows 8 or Windows 10, but they will probably work in Windows 8. (Windows 10 is not supported yet by some of the supporting software packages).
+
+## Pre-install checklist
+
+* Your Windows machine has internet access
+* Your Windows machine has virtualization enabled in the BIOS
+* Your Windows machine is running 64-bit Windows 7 (see note below if you are running 32-bit)
+* You have Administrator permissions and are able to install software on your Windows machine
+* You have at least 2GB of free RAM (see note below)
+* You can safely reboot your machine without losing access to it
 
 > Note: the configurations provided are for 64-bit Windows. If you are running 32-bit Windows you will need to use a slightly different configuration, which will be provided and documented once it is tested. Until then, try replacing `ubuntu/trusty64` with `ubuntu/trusty32` in `Vagrantfile`.
 
-## Install prerequisites
+> Note: the default RAM usage of the dashboard is 2GB. It will likely work fine with less RAM (which is configured in `Vagrantfile` but that has not been extensively tested.
+
+## Install required software packages
 
 Install VirtualBox for Windows Hosts:
 
