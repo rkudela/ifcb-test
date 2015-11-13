@@ -10,10 +10,13 @@ This guide covers installation of the IFCB dashboard on Windows 7. These instruc
 * You have Administrator permissions and are able to install software on your Windows machine
 * You have at least 2GB of free RAM (see note below)
 * You can safely reboot your machine without losing access to it
+* A browser other than Internet Explorer (see note below)
 
 > Note: the configurations provided are for 64-bit Windows. If you are running 32-bit Windows you will need to use a slightly different configuration, which will be provided and documented once it is tested. Until then, try replacing `ubuntu/trusty64` with `ubuntu/trusty32` in `Vagrantfile`.
 
 > Note: the default RAM usage of the dashboard is 2GB. It will likely work fine with less RAM (which is configured in `Vagrantfile`), but that has not been extensively tested.
+
+> Note: not all dashboard features work with Internet Explorer and because of limited funds for development we cannot support it. To use all of the dashboard's web interface, you will need to use an alternate browser such as Firefox or Chrome. The browser we test with is Firefox for Windows.
 
 ## Install required software packages
 
