@@ -10,7 +10,7 @@
 10. Select mosaic or [[plot]] view
 11. Select mosaic size
 12. Select scaling of mosaic images
-13. Click any image for [[single image view]].
+13. Click any image for [[individual ROI view]].
 14. To smaller or larger images from the same bin
 15. To single bin view
 16. Links to associated data files and meta data.
