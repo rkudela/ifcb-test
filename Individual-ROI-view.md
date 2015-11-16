@@ -1,3 +1,8 @@
-1. Indivuidual ROI view
+1. Individual ROI selected from the mosaic 
+2. Link to individual ROI only (5-7)
+3. Blob view.
+4. Outline view.
+5. To previous or next ROI in the sample bin
+6. Link back to sample bin
+7. Individual ROI meta data
 
-![individual roi view](https://cloud.githubusercontent.com/assets/14059636/11191928/2dfc2ada-8c6c-11e5-810d-07c836017caa.png)
