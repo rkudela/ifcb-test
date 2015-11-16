@@ -7,7 +7,7 @@
 7. Zoom or scroll the timeline.
 8. Date and time of currently displayed bin, also indicated by blue line.
 9. To adjacent bins
-10. Select mosaic or plot view
+10. Select mosaic or [[plot]] view
 11. Select mosaic size
 12. Select scaling of mosaic images
 13. Click any image for [[single image view]].
