@@ -4,7 +4,7 @@ The IFCB dashboard is under active development and so bug fixes and new features
 
 The dashboard is beta quality code; it may have bugs that are not yet fixed. If you think you've found a bug, check the release notes to see if it's been fixed, and you may be able to resolve your issue by updating your dashboard code. If you find a bug that we don't know about, please report it using the issues tab on this repository.
 
-When a new release is available, we will post a notice to the IFCB users Google Group.
+When a new release is available, we will post a notice to the [IFCB users Google Group](https://groups.google.com/forum/?hl=en#!forum/ifcb-user-group).
 
 ## How to update code
 
@@ -33,4 +33,4 @@ In your browser, make sure to shift-reload (or use whatever means your browser p
 
 ## Stable releases versus latest code
 
-In the future we will be providing specific instructions to install specific versions. In the meantime when you update you will get the very latest changes and updates, and those may contain bugs. If you are not experiencing problems with your dashboard, you do not need to update, but when there is a major change that requires updating, we will announce it on the Google Group.
+In the future we will be providing specific instructions to install specific versions. In the meantime when you update you will get the very latest changes and updates, and those may contain bugs. If you are not experiencing problems with your dashboard, you should not feel that you need to update frequently. When there is a major change that requires updating, we will announce it on the [IFCB users Google Group](https://groups.google.com/forum/?hl=en#!forum/ifcb-user-group).
