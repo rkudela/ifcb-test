@@ -47,9 +47,9 @@ Now, test the acquisition process using the command line on your virtual machine
 curl http://localhost:9270/workflow/api/v1/wakeup/ifcb:acq:myifcb > /dev/null
 ```
 
-If you return to your dashboard, you should see data from the instrument in your time series. If you don't see it immediately, wait a few seconds and reload the dashboard in your browser. If you do this repeatedly and data does not show up, there may be a variety of problems. For example, your data share (not the instrument's data directory, but the one associated with your time series) may not allow you to write because of permissions.
+If you return to your dashboard, you should see data from the instrument in your time series. If you don't see it immediately, wait a few seconds and reload the dashboard in your browser. If you reload repeatedly for a while and data does not show up, there may be a variety of problems. For example, your data share (not the instrument's data directory, but the one associated with your time series) may not allow you to write data because of permissions.
 
-If this works, you are ready to set up a schedule for automatic acquisition. Decide on how often to check for new data. It is generally not necessary to check more often than once every 20 minutes. To set up this schedule, run the following command on your virtual machine (remember, this is an example, use whatever you called your instrument in place of 'myifcb'):
+If you do see new data as a result of this process, you are ready to set up a schedule for automatic acquisition. Decide on how often to check for new data. It is generally not necessary to check more often than once every 20 minutes. To set up this schedule, run the following command on your virtual machine (remember, this is an example, use whatever you called your instrument in place of 'myifcb'):
 
 ```
 { crontab -l; echo '*/20 * * * * /usr/bin/curl http://localhost:9270/workflow/api/v1/wakeup/ifcb:acq:myifcb > /dev/null'; } | crontab -
