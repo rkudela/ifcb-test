@@ -4,5 +4,4 @@
 4. Scroll the timeline
 5. The blue line marks the date of the currently displayed bin.
 6. The red line marks the current date.
-
-![timeline help](https://cloud.githubusercontent.com/assets/14059636/11192500/91f5bef4-8c6f-11e5-84a1-96768bc4cce0.png)
+![timeline help jpg](https://cloud.githubusercontent.com/assets/14059636/11541092/4c5d0fd2-98fe-11e5-9d6c-1e8dbfcac902.jpg)
