@@ -1,4 +1,4 @@
-1. To adjacent bins
+1. Navigate too adjacent bins
 2. Select mosaic or plot view
 3. Select linear or log scale for x and y axis
 4. Select size of the plot
