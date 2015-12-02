@@ -4,8 +4,9 @@
 4. Link to [[recent tags and comments]]
 5. Search for comments and tags
 6. [[Timeline]] showing data volume by day
-7. Zoom or scroll the timeline
-8. Date and time of currently displayed bin, also indicated by blue line
+7. Zoom or scroll the timeline with these buttons or zoom using the mouse wheel.
+8. Date and time of currently displayed bin, also indicated by blue line which
+can be clicked below the timeline and dragged.
 9. To adjacent bins
 10. Select mosaic or [[plot]] view
 11. Select mosaic size
