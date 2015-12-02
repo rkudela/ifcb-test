@@ -16,8 +16,8 @@ can be clicked below the timeline and dragged.
 15. Link to single sample bin view
 16. Links to associated data files and meta data
 17. Mark a bin to be skipped in the dashboard. The bin can still be accessed by entering the full bin name in the browser address bar. 
-18. View and add searchable bin [[tags]].
-19. View and add searchable [[comments]] (log in to add comments)
+18. View and add searchable bin [[tags]] (log in to add tags).
+19. View and add searchable [[comments]] (log in to add comments).
 20. Navigate to a list of files from the current day; use to skip the whole day. 
 21. Log in as user.
 22. Link to administrative page for time series management (must be logged in).
