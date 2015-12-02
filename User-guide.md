@@ -21,5 +21,6 @@ can be clicked below the timeline and dragged.
 20. Navigate to a list of files from the current day; use to skip the whole day. 
 21. Log in as user.
 22. Link to administrative page for time series management (must log in as an administrator).
+https://github.com/joefutrelle/ifcb-dashboard/wiki/Installation#accession
 
 ![home screen with bottom bits png](https://cloud.githubusercontent.com/assets/14059636/11543202/4e457f9a-9909-11e5-8ebd-f72ef316da0f.jpg)
