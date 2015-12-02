@@ -7,12 +7,12 @@
 7. Zoom or scroll the timeline with these buttons or zoom using the mouse wheel.
 8. Date and time of currently displayed bin, also indicated by blue line which
 can be clicked below the timeline and dragged.
-9. To adjacent bins
+9. Navigate to adjacent bins
 10. Select mosaic or [[plot]] view
 11. Select mosaic size
 12. Select scaling of mosaic ROIs (regions of interest)
 13. Click any image for [[individual ROI view]]
-14. To smaller or larger images from the same bin
+14. To smaller or larger images from the same sample bin
 15. To single bin view
 16. Links to associated data files and meta data
 17. Mark a bin to be skipped in the dashboard. The bin can still be accessed by entering the full bin name in the browser address bar. 
