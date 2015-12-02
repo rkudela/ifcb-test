@@ -7,4 +7,4 @@
 7. Highlight a group of dots (red box) and see the corresponding ROIs.
 8. ROIs highlighted in red box.
 
-![plot view](https://cloud.githubusercontent.com/assets/14059636/11193763/71c903e6-8c76-11e5-8162-638183cbcbc8.png)
+![plot view jpg png](https://cloud.githubusercontent.com/assets/14059636/11541542/c7f92570-9900-11e5-80be-d4e583c8c8e8.jpg)
