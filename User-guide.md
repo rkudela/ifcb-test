@@ -16,7 +16,7 @@ can be clicked below the timeline and dragged.
 15. Link to single sample bin view
 16. Links to associated data files and meta data
 17. Mark a bin to be skipped in the dashboard. The bin can still be accessed by entering the full bin name in the browser address bar. 
-18. Add searchable bin [[tags]].
-19. Add searchable [[comments]].
+18. View and add searchable bin [[tags]].
+19. View and add searchable [[comments]].
 
 ![dashboard home screen jpg](https://cloud.githubusercontent.com/assets/14059636/11536773/fae07ace-98e7-11e5-95a3-c85d9b944620.jpg)
