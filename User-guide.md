@@ -19,4 +19,4 @@ can be clicked below the timeline and dragged.
 18. Add searchable bin [[tags]].
 19. Add searchable [[comments]].
 
-![dashboard home screen](https://cloud.githubusercontent.com/assets/14059636/11188846/ef8b8644-8c5a-11e5-8236-8ecbd6c23c8f.png)
+![dashboard home screen jpg](https://cloud.githubusercontent.com/assets/14059636/11536773/fae07ace-98e7-11e5-95a3-c85d9b944620.jpg)
