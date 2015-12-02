@@ -19,5 +19,7 @@ can be clicked below the timeline and dragged.
 18. View and add searchable bin [[tags]].
 19. View and add searchable [[comments]] (log in to add comments)
 20. Navigate to a list of files from the current day; use to skip the whole day. 
+21. Log in as user.
+22. Link to administrative page for time series management (must be logged in).
 
 ![dashboard home screen jpg](https://cloud.githubusercontent.com/assets/14059636/11536773/fae07ace-98e7-11e5-95a3-c85d9b944620.jpg)
