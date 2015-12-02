@@ -21,4 +21,5 @@ can be clicked below the timeline and dragged.
 20. Navigate to a list of files from the current day; use to skip the whole day. 
 21. Log in as user.
 22. Link to administrative page for time series management (must be logged in).
-![home screen with bottom bits png](https://cloud.githubusercontent.com/assets/14059636/11543079/b5d10f0e-9908-11e5-92c4-f1cf1806745f.jpg)
+
+![home screen with bottom bits png](https://cloud.githubusercontent.com/assets/14059636/11543202/4e457f9a-9909-11e5-8ebd-f72ef316da0f.jpg)
