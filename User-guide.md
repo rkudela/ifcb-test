@@ -1,7 +1,7 @@
 1. Current time series
 2. Drop down menu to select a different time series in the dashboard
 3. View [[metrics]] about the current bin
-4. Link to [[recent tags and comments]]
+4. Link to [[Recent activity]]
 5. Search for comments and tags
 6. [[Timeline]] showing data volume by day
 7. Zoom or scroll the timeline with these buttons or zoom using the mouse wheel.
