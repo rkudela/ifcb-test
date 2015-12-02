@@ -2,7 +2,7 @@
 2. Link to individual ROI only (displayed on the right)
 3. Blob view.
 4. Outline view.
-5. To previous or next ROI in the sample bin
+5. Navigate to previous or next ROI in the sample bin
 6. Link back to sample bin
 7. Individual ROI meta data
 
