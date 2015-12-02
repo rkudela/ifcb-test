@@ -6,7 +6,7 @@ Recent activity
 4. Recent comments.
 5. Link to the sample bin associated with a comment.
 6. Tag cloud.
-7. Click any tag to navigate to a list of sample bins with a given tag.
+7. Click any tag to navigate to a list of sample bins with a given tag ([[tag example]]).
 8. Recent tags.
 9. Link to the sample bin associated with a tag.
 10. Click the tag to navigate to a list of sample bins with the same tag.
