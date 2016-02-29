@@ -79,7 +79,7 @@ You will see a "blank" dashboard.
 
 ## Connect your data directory
 
-Now you need to give the virtual machine access to your data. The following assumes that your data is on a share called `\\myserver.whatever.edu\ifcbdata`.
+Now you need to give the virtual machine access to your data. The following assumes that your data is on a share called `\\myserver.whatever.edu\ifcbdata`. You should use your real data server's name and share name.
 
 At the Git Shell prompt, enter this command to log in to your virtual machine.
 
